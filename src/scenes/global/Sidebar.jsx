@@ -72,9 +72,7 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
-                </Typography>
+                <Typography variant="h3" color={colors.grey[100]}></Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
                 </IconButton>
@@ -84,7 +82,7 @@ const Sidebar = () => {
 
           {!isCollapsed && (
             <Box mb="25px">
-              <Box display="flex" justifyContent="center" alignItems="center">
+              {/* <Box display="flex" justifyContent="center" alignItems="center">
                 <img
                   alt="profile-user"
                   width="100px"
@@ -92,7 +90,7 @@ const Sidebar = () => {
                   src={`../../assets/user.png`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
-              </Box>
+              </Box> */}
               <Box textAlign="center">
                 <Typography
                   variant="h2"
@@ -102,7 +100,7 @@ const Sidebar = () => {
                 >
                   Jarvis
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
+                <Typography variant="h5" color={colors.primary[500]}>
                   Jarvis Dashboard
                 </Typography>
               </Box>
