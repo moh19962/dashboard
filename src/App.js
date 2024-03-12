@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
-import Dashboard from "./scenes/Dashboard";
+import Dashboard from "./scenes/dashboard/index";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 
@@ -17,7 +17,9 @@ function App() {
           <Sidebar />
           <main className="content">
             <Topbar />
-            <Routes>{/* <Route path="/" element={<Dashboard />} /> */}</Routes>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+            </Routes>
           </main>
         </div>
       </ThemeProvider>

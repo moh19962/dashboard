@@ -82,15 +82,6 @@ const Sidebar = () => {
 
           {!isCollapsed && (
             <Box mb="25px">
-              {/* <Box display="flex" justifyContent="center" alignItems="center">
-                <img
-                  alt="profile-user"
-                  width="100px"
-                  height="100px"
-                  src={`../../assets/user.png`}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
-              </Box> */}
               <Box textAlign="center">
                 <Typography
                   variant="h2"
@@ -100,7 +91,7 @@ const Sidebar = () => {
                 >
                   Jarvis
                 </Typography>
-                <Typography variant="h5" color={colors.primary[500]}>
+                <Typography variant="h5" color={colors.grey[500]}>
                   Jarvis Dashboard
                 </Typography>
               </Box>
